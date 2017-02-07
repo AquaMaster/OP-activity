@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<!--[if lt IE 9]>
+    <script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lte IE 7]>
+        <link rel="stylesheet" href="accueil_ie.css" />
+        <![endif]-->
+
+<title>Aquanautes, les explorateurs aquatiques</title>
+<link rel="stylesheet" href="indexMainPage.css" />
+</head>
+
+<!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+    <!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+    <!--[if IE 8 ]><body class="ie8"><![endif]-->
+    <!--[if IE 9 ]><body class="ie9"><![endif]-->
+    <!-- [if FF ]><body class="ff"><![endif]-->
+    <!--[if !IE]><!--><body><!--<![endif]-->
+    
+	<!-- page d'accueil du site aquanautes-->
+	
+    <div id="bloc_page">
+		<header>
+			<div id="head">
+			<p>
+				<img alt="Logo aquanautes" src="image/logo_aquanautes1.png" id="logo" />
+			</p>
+
+			<div id="titre">
+				<h1>Aquanautes</h1> 
+			</div>
+			<div id="titre_2">
+				<h2>
+					A la découverte des <em>Océans</em>
+				</h2>
+			</div>
+			<div id="searchTool"> 
+                    <form action="recherche.php" method="post" class="searching">
+								<input type="text" name="search" id="search" placeholder="Recherche..."
+										maxlength="30"	required /> <input type="submit" value="ok" id="submit" />
+							</form>
+			<script src="Script/scriptSearch.js"></script>
+			</div>
+		<nav>
+			<ul id="menu">
+						<li class="accueil">Accueil</li>
+						<li>
+							<a href="indexArticle.html" id ="sommaireArticle"> Articles </a> 	
+						</li>
+						<li class="men_ress">
+							<a href="galerie_photos.html" id="photo"> Photos </a>
+						</li>
+						<li class="men_ress">
+						<a href="ressources.html" title="Réservé aux membres" id="ressource"> Documentation </a>
+						</li>
+						<li class="men_ress">
+							<a href="galerie_photos.html" id="lien"> Liens </a>
+						</li>
+						<li class="men_ress">
+							<a href="galerie_photos.html" id="contact"> Contact</a>
+						</li>
+					</ul>	
+				<script src="Script/scriptNav.js">
+					
+				</script>
+			</nav>
+			</div>
+		</header>
+				<ul id="ss_mn">
+								<li class="sous_menu"><a href="oceanographie.html">Océanographie </a></li>
+								<li class="sous_menu"><a href="produits_de_la_mer.html"
+									title="connaître son alimentation"> Alimentation </a></li>
+								<li class="sous_menu"><a href="aquariophilie.html"> Aquariophilie </a></li>
+							 </ul>
+		<section>
+			<div class="presentation">
+				<p>
+					Bienvenue sur <strong>Aquanautes</strong>, le site d'exploration
+					des<em> milieux aquatiques</em>. Si vous aussi vous êtes passionné
+					par cette univers, <br /> je vous souhaite une excellente immersion
+					parmis les aquanautes.
+				</p>
+			</div>
+			
+			
+			<div id="ligne">
+				<img src="image/squelette.png" alt="" id="squelette" />
+
+
+				<div id="bloc_oceano">
+					<a href="oceanographie.html" title="portail oceanographie"></a>
+						<div id="oceano">
+							<div id="titre_oceano">
+								<p>
+									<a href="oceanographie.html" title="portail océanographie"
+									class="lien"> Explorons les Océans 
+									</a>
+								</p>
+							</div>
+							<p>
+								<a href="oceanographie.html" title="portail océanographie"> <img
+									alt="" src="image/boat.png"
+									title="portail océanographie" id="img_boat" />
+								</a>
+							</p>
+
+
+							<div id="month">
+								<h4 class="art">Actualité du mois</h4>
+								<p class="art_2">
+									Réchauffement climatique: <br /> quelle impact?
+								</p>
+							</div>
+						</div>
+				</div>
+
+
+					<div id="pdm">
+						<div id="titre_pdm">
+							<p>
+								<a href="produits_de_la_mer.html" title="portail pdm"
+									class="lien"> Produits de la mer </a>
+							</p>
+						</div>
+
+						<p>
+							<a href="produits_de_la_mer.html" title="portail pdm"> <img
+								src="image/sushi.png" alt="" title="portail pdm"
+								id="img_sushi" />
+							</a>
+						</p>
+
+						<div id="month_pdm">
+							<h4 class="art">Actualité du mois</h4>
+							<p class="art_2">
+								Etiquetage <br /> des produits de la mer
+							</p>
+						</div>
+					</div>
+
+					<div id="aquario">
+						<div id="titre_aquario">
+							<p>
+								<a href="aquariophilie.html" title="portail aquario"
+									class="lien1"> Le coin des <br /> aquariophiles
+								</a>
+							</p>
+						</div>
+
+						<p>
+							<a href="aquariophilie.html" title="portail aquario"> <img
+								src="image/amphiprion.png" alt=""
+								title="portail des aquariophiles" id="img_aquario" />
+							</a>
+						</p>
+
+						<div id="month_aquario">
+							<h4 class="art">Article du mois</h4>
+							<p class="art_2">
+								Bien choisir <br /> le biotope
+							</p>
+						</div>
+					</div>
+
+					<div id="espece">
+						<div id="titre_espece">
+							<p>
+								<a href="BDD/bdd_especes.html" title="fiches espèces"
+									class="lien"> Fiches Espèces </a>
+							</p>
+						</div>
+
+						<p>
+							<a href="BDD/bdd_especes.html" title="Fiches espèces"> <img
+								src="image/crab.png" alt="" title="fiches_espèces"
+								id="img_esp" />
+							</a>
+						</p>
+
+						<div id="month_espece">
+							<h4 class="art">L'espèce du mois</h4>
+							<p class="art_2">Le maigre</p>
+						</div>
+					</div>
+				</div>
+				<script src="Script/scriptAnimation.js">	</script>
+		</section>
+		
+		<footer>
+			<div id="social">
+					
+					<p><a href="https://www.facebook.com/aquanautes?ref=bookmarks"
+					target="_blank"> <img src="image/fb1.png" alt="facebook" id="fb"/></a></p>
+					<p><a href="https://plus.google.com/u/0/114088408711983320200/posts/p/pub"
+					target="_blank"><img src="image/googlePlus.png" alt="google+" id="google" /> </a></p>
+					<p><a href="https://www.pinterest.com/aquanautes/" target="_blank"> 
+					<img src="image/logopinterest.png" alt="pinterest" id="pinterest" />
+					</a></p>
+					<script src="Script/scriptSocial.js"></script>
+			</div>
+					
+		</footer>
+		
+	</div>
+	</body>
+</html>
