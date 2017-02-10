@@ -1,0 +1,851 @@
+/* Polices */
+		@font-face
+			{
+				font-family : 'infini';
+					src: url('polices/infini/infini-romain.otf');
+
+				font-family: 'aaargh';
+    				src: url('Aaargh-webfont.eot');
+    				src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         			  url('Aaargh-webfont.woff') format('woff'),
+        				  url('Aaargh-webfont.ttf') format('truetype'),
+         			  url('Aaargh-webfont.svg#aaarghnormal') format('svg');
+			}
+		@keyframes animation {
+			0% {
+				opacity: 0;
+				transform: rotateY(0deg);			
+			}	
+			50% {
+				opacity: 0.5;
+				transform: rotateY(90deg);
+			}	
+			100% {
+				opacity: 0.8;
+				transform: RotateY(180deg);
+			}
+		}
+		
+		@-webkit-keyframes animation {
+			0% {
+				opacity: 0;
+				transform: rotateY(0deg);			
+			}	
+			50% {
+				opacity: 0.5;
+				transform: rotateY(90deg);
+			}	
+			100% {
+				opacity: 0.8;
+				transform: RotateY(180deg);			
+			}
+		}
+
+/* balise globale */
+		body
+			{
+				background-image: url("image/fond.png");
+				background-attachment: fixed;			
+				background-position: center;
+				color: rgba(249,255,250,1);
+				font-family : aaargh, infini, dingbats, arial, sans-serif;
+			}
+		#bloc_page
+			{
+				width: 100%;
+				height: 80%;
+				margin: auto;	
+				max-width: 1600px;	
+			}
+		h1
+			{
+				text-transform: uppercase;
+			}
+/* personnalisation de la barre header*/
+		header
+			{	
+				background-image: url("image/fond_header.png");
+				background-size: auto;
+				background-repeat: no-repeat;
+				box-shadow: 5px 5px 5px black;
+				width: 100%;
+				margin: auto;		
+			}
+		#logo
+			{
+				float: left;
+				margin-top: 5px;
+				margin-left: 10px;
+			}		
+		#titre
+			{
+				display: inline-block;	
+				line-height: 5%;
+				text-indent: 10%;
+				font-size: 1.5em;
+				color: rgb(107,64,126);
+				/*-webkit-text-stroke: 2px white;*/
+				text-shadow: #F6FaFd 3px 0px 0px, #F6FaFd 3px 3px 0px, #F6FaFd 3px -3px 0px, #F6FaFd -3px 3px 0px, 
+#F6FaFd -3px 0px 0px, #F6FaFd -3px -3px 0px, #F6FaFd 0px 3px 0px, #F6FaFd 0px -3px 0px;	
+				font-style: italic;			
+			}	
+						
+		#titre_2
+			{
+				color: whitesmoke;/*rgba(80,0,200,1)*/
+				font-style: oblique;
+				text-indent: 100px;
+				line-height: 5%;
+			}
+
+/*naviguation header*/
+		
+		#sommaire
+			{
+				background-color: rgba(2,0,4,0.5);	
+			}
+		nav li
+			{
+				font-size: 18px;
+				/*color: rgba(249,255,250,1);*/
+				font-weight: bold;	
+				text-decoration: none;
+				text-align: center;
+				width: 18%;
+				height: 100%;
+				display: inline-block;
+				padding-bottom: 4px;
+				padding-top: 6px;		
+				vertical-align: top;				
+			}	
+		
+		nav ul
+			{
+				list-style-type: none;			
+			}
+			
+		.accueil
+			{
+				color: blueviolet;
+				font-weight: bold;
+				border-bottom: 5px solid blueviolet;
+				border-radius: 10%;
+			}
+		
+		.sous_menu
+			{
+				display: none;
+			}
+			
+		.searching
+			{
+				height: 10%;
+				display: inline-block;
+			}
+
+		#search 
+		    
+			{
+				width: 50%;
+				color: grey;
+				display: inline-block;
+			}
+				
+		#submit       
+			{ 
+				padding: 1px; 
+				height: 2em;
+				font-size: 10px;
+				font-weight: bold;
+				display: inline-block;
+				margin-left: 1.5em;
+			}
+		
+			
+		nav a
+			{		
+				text-decoration: none;
+				color: white;	
+			}
+		
+		nav a:hover
+			{		
+				color: blueviolet;
+				font-weight: bold;
+				border-bottom: 5px solid blueviolet;
+				padding-bottom: 2%;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 4%;
+				border-radius: 10%;
+			}
+		
+		
+			
+/* Présentation du site */			
+		.presentation
+			{
+				font-size: 1,5em;
+				text-align: center;
+			}
+		
+		#squelette
+			{
+				width: 90%;
+				height: 45%;
+				position: absolute;
+				top: 24%;
+				left:3%;
+				z-index: 1;
+			}	
+			
+		#oceano
+			{
+				background-image: url("image/oceano.jpg");
+				border-radius: 2%;
+				border: 2px solid white;
+				position: absolute;
+				top: 60%;
+				left:10%;
+				z-index: 2;
+				height: 35%;
+				width: 15%;
+				text-align: center;
+			}
+		
+		#img_boat
+			{
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-bottom: 30%;
+				padding-top: 20%;
+				height:40%;
+				width: 40%;
+				z-index: 3;
+				opacity: 0;
+				/*transition-property: opacity;
+				transition-duration: 1s;
+				transition-timing-function: cubic-bezier(0.62, -0.25, 0.24, 1.02);*/
+			}
+		#img_boat:hover
+			{
+				animation: animation 0.5s forwards;			
+			}
+			
+		#titre_oceano
+			{
+				position: absolute;
+    			border-radius: 5%;
+    			width: 99.5%;
+    			height: 32px;
+    			vertical-align: middle;
+    			background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
+    			background-color: rgba(24,24,24,0.8);
+    			color: white;
+    			font-size:1em;
+    			margin: auto;
+    			line-height: 1px;
+    			z-index: 3;
+			}
+		
+		.lien
+			{
+				color: white;
+				text-decoration: none;			
+			}
+			
+		#month
+			{
+				background-color: rgba(255,255,255,0.5);		
+				color: black;
+				font-size: 0.8em;
+				position: absolute;
+				top: 75%;
+				z-index: 4;	
+				text-align: center;
+				width: 100%;
+				height: 25%;
+			}
+		
+		.art
+	   	{
+	   		margin-top: 4%;
+	   		text-decoration: underline;
+	   		line-height: 2px;
+	   	}
+	   	
+		.art_2
+			{		
+				color: rgb(163,0,244);
+				font-size: 0.9em;
+				text-align: center;
+				font-weight: bold;
+				text-decoration: none;
+				
+			}
+			
+		#pdm
+			{
+				background-image: url("image/pdm1.JPG");
+				border-radius: 2%;
+				border: 2px solid white;
+				position: absolute;
+				top: 60%;
+				left:30%;
+				z-index: 2;
+				height: 35%;
+				width: 15%;
+				text-align: center;
+			}
+			
+		#img_sushi
+			{
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-bottom: 20%;
+				padding-top: 20%;
+				z-index: 3;
+				opacity: 0;
+				padding: 28%;
+				/*transition: opacity 1s cubic-bezier(0.62, -0.25, 0.24, 1.02);*/
+				
+			}
+		#img_sushi:hover
+			{
+				animation: animation 0.5s forwards;			
+			}
+			
+		#titre_pdm
+			{
+				position: absolute;
+    			border-radius: 5%;
+    			width: 99.5%;
+    			height: 32px;
+    			vertical-align: middle;
+    			background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
+    			background-color: rgba(24,24,24,0.8);
+    			color: white;
+    			font-size:1em;
+    			margin: auto;
+    			line-height: 1px;
+    			z-index: 3;
+			}
+			
+		#month_pdm
+			{
+				background-color: rgba(255,255,255,0.5);		
+				color: black;
+				font-size: 0.8em;
+				position: absolute;
+				top: 75%;
+				z-index: 4;	
+				text-align: center;
+				width: 100%;
+				height: 25%;
+			}
+			
+		#aquario
+			{
+				background-image: url("image/anci_v2.JPG");
+				border-radius: 2%;
+				border: 2px solid white;
+				position: absolute;
+				top: 60%;
+				left:49%;
+				z-index: 2;
+				height: 35%;
+				width: 15%;
+				text-align: center;
+			}
+			
+		#titre_aquario
+			{
+				position: absolute;
+    			border-radius: 5%;
+    			width: 99.5%;
+    			height: 37px;
+    			background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
+    			background-color: rgba(24,24,24,0.8);
+    			color: white;
+    			font-size:1em;
+    			margin-top: 1px;
+    			z-index: 3;
+  			}
+		
+		#img_aquario
+			{
+				z-index: 3;
+				opacity: 0;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-bottom: 20%;
+				padding-top: 20%;
+				/*transition-property: opacity;
+				transition-duration: 1s;
+				transition-timing-function: cubic-bezier(0.62, -0.25, 0.24, 1.02);*/
+			}
+		#img_aquario:hover
+			{
+				animation: animation 0.5s forwards;			
+			}
+			
+		#month_aquario
+			{
+				background-color: rgba(255,255,255,0.5);		
+				color: black;
+				font-size: 0.8em;
+				position: absolute;
+				top: 75%;
+				z-index: 4;	
+				text-align: center;
+				width: 100%;
+				height: 25%;
+			}
+			
+		.lien1
+			{
+				color: white;
+				text-decoration: none;
+				position: absolute;
+				top: 2%;
+				left: 25%;			
+			}
+				
+			
+	 
+		#espece
+			{
+				background-image: url("image/img_espece.jpg");
+				background-repeat: no-repeat;
+				opacity: 0.9;
+				border-radius: 2%;
+				border: 2px solid white;
+				position: absolute;
+				top: 60%;
+				left:69%;
+				z-index: 2;
+				height: 35%;
+				width: 15%;
+				text-align: center;
+			}	
+			
+		#titre_espece
+			{
+				position: absolute;
+    			border-radius: 5%;
+    			width: 99.5%;
+    			height: 32px;
+    			vertical-align: middle;
+    			background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
+    			background-color: rgba(24,24,24,0.8);
+    			color: white;
+    			font-size:1em;
+    			margin: auto;
+    			line-height: 1px;
+    			z-index: 3;
+			}
+	  
+			
+		#img_esp
+			{
+				
+				z-index: 3;
+				opacity: 0;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-bottom: 20%;
+				padding-top: 20%;
+				/*padding-bottom: 22%;*/
+				/*transition: opacity 1s cubic-bezier(0.62, -0.25, 0.24, 1.02);*/			
+			}
+		#img_esp:hover
+			{
+				animation: animation 0.5s forwards;			
+			}
+			
+		#month_espece
+			{			
+				background-color: rgba(255,255,255,0.5);		
+				color: black;
+				font-size: 0.8em;
+				position: absolute;
+				top: 75%;
+				z-index: 4;	
+				text-align: center;
+				width: 100%;
+				height: 25%;
+			}
+			
+
+	/*bloc actualités*/
+
+	#bloc_actualite
+		{
+			border: 2px solid white;
+			background-image: url("image/fondpaysage.JPG");
+			position: absolute;
+			top: 100%;
+			margin-left: 5%;
+			height: 20%;
+			width: 40%;
+			border-radius: 25px;
+		}	
+	
+	.banniere_actualite
+		{
+			background-color: rgba(24,24,24,0.6);
+			background-position: bottom center;
+			position: absolute;
+			bottom: 0;		
+			width: 99.5%;
+			height: 30%;
+			border-radius: 0 0 25px 25px;
+			vertical-align: middle;
+		}
+
+	.banniere_actualite p
+		{
+			display: inline-block;
+			position: absolute;
+			top: -15%;
+			left: 20px;
+			font-size: 1em;
+			font-family: aaargh, arial, sans-serif;
+		}
+	.bouton_rouge
+		{
+			display: inline-block;
+			position: absolute;
+			right: 15px;
+			top: 20%;
+			font-size: 1em;
+			color: white;
+			text-decoration: none;
+			background-image: url("image/fond_degraderouge.png");
+			padding-bottom: 2px;
+			padding-top: 2px;
+			padding-left: 5px;
+			padding-right: 5px;
+			border: 1px solid #760001;
+			text-align: center;
+			border-radius: 5px;			
+		}
+	
+	#bloc_especes
+		{
+			border: 2px solid white;
+			background-image: url("image/esturgeon.jpg");
+			position: absolute;
+			top: 100%;
+			margin-left: 50%;
+			height: 20%;
+			width: 40%;
+			border-radius: 25px;
+		}	
+	footer
+		{
+			background-color: rgba(2,0,4,0.5);
+			width: 100%;
+			height: 10%;
+			margin: auto;
+			position: absolute;
+			top: 125%;
+			left: 0px;
+		}	
+	
+	 #contact a
+		{
+			color: white;	
+			text-decoration: none;
+		}
+	
+	#social
+	{ display: inline-block; height: 100%;}
+	#social h3, #social p, footer h3 
+	{display: inline-block;}
+	#social
+	{ width: 40%;}
+	#social p
+	{ margin-right: 2%;}
+	#social h3
+	{margin-left: 3%;margin-right: 3%; vertical-align: middle;}
+	#fb
+	{height: 5%; vertical-align: middle;}
+	#google
+	{height: 10%; vertical-align: middle; background-color: white;}
+	#pinterest
+	{vertical-align: middle;}
+	#lien
+	{margin-left: 5px; width: 30%;	}
+
+/*correction version ancienne et firefox*/		
+.ff #titre
+			{
+				display: inline;
+				zoom: 1;
+				line-height: 5%;
+				text-indent: 10%;
+				font-size: 1.5em;
+				color: rgb(76,64,126);
+				text-shadow: #F6FaFd 3px 0px 0px, #F6FaFd 3px 3px 0px, #F6FaFd 3px -3px 0px, #F6FaFd -3px 3px 0px, 
+#F6FaFd -3px 0px 0px, #F6FaFd -3px -3px 0px, #F6FaFd 0px 3px 0px, #F6FaFd 0px -3px 0px;	
+				font-style: italic;			
+			}	
+
+@media screen and (max-width : 1075px) and (min-width: 900px)
+{
+	#squelette
+		{
+			display: none;
+		}
+	#oceano, #pdm, #espece, #aquario
+		{
+			top: 45%;	
+			width: 20%;			
+		}
+	#oceano
+		{
+			left: 3%;		
+		}
+	#pdm
+		{
+			left: 28%;		
+		}
+	#aquario
+		{
+			left: 53%;		
+		}
+	#espece
+		{
+			left: 78%;		
+		}
+	#bloc_actualite, #bloc_especes
+		{
+			top: 90%;		
+		}
+	#bloc_page
+		{
+			height: 90%;		
+		}
+		
+	#footer
+		{
+			margin-top: 10px;
+		}
+		
+	nav li
+		{
+			width: 140px;	
+			font-size: 12px;
+		}
+	#titre_oceano, #titre_pdm, #titre_aquario, #titre_espece
+		{
+			font-size: 12px;
+			text-align: center;		
+		}
+	#espece
+			{
+				background-image: url("image/img_espece.jpg");
+				background-repeat: no-repeat;
+			}	
+}
+@media screen and (max-width : 899px)
+{
+	#squelette
+		{
+			display: none;
+		}
+	#oceano, #pdm
+		{
+			top: 25%;	
+			width: 20%;			
+		}
+	#oceano
+		{
+			left: 3%;	
+			width: 40%;	
+		}
+	#pdm
+		{
+			left: 55%;
+			width:40%;		
+		}
+	#aquario
+		{
+			left: 3%;
+			top: 65%;
+			width: 40%;			
+		}
+	#espece
+		{
+			left: 55%;	
+			width: 40%;
+			top: 65%;	
+			background-image: url("image/img_espece.jpg");
+			background-repeat: no-repeat;
+		}
+	#bloc_actualite, #bloc_especes
+		{
+			top: 90%;		
+		}
+		
+	#footer
+		{
+			margin-top: 10px;
+		}
+		
+	nav
+		{
+			display: none;
+		}
+	#titre_oceano, #titre_pdm, #titre_aquario, #titre_espece
+		{
+			font-size: 12px;
+			text-align: center;		
+		}
+	h2
+		{
+			color: white;
+			font-size: 70%;		
+		}
+	h1
+		{
+			font-size: 150%;		
+		}
+	.presentation
+		{
+			display: none;		
+		}
+	#bloc_especes
+		{
+			display: none;		
+		}
+	#bloc_actualite
+		{
+			top: 101%;
+			width: 80%;
+			left: 5%;		
+		}
+	#social
+		{
+			width: 80%;		
+		}
+	#social h3, #lien, #contact
+		{
+			display: none;		
+		}
+	
+	#footer p
+		{
+			text-align: center;
+			width: 100%;
+			margin-right: 10%;
+			padding-right: 10%;
+			position: relative;
+			left: 20%;
+		}
+}			
+@media all and (max-device-width : 480px)
+{
+	#squelette
+		{
+			display: none;
+		}
+	#oceano, #pdm
+		{
+			top: 15%;	
+			background-repeat: no-repeat;			
+		}
+	#oceano
+		{
+			background-image: url("image/oceano_v1.jpg");						
+			left: 3%;	
+			width: 40%;	
+			height: 30%;
+		}
+	#pdm
+		{
+			left: 55%;
+			width:40%;	
+			height: 30%;
+			background-image: url("image/pdm.JPG");
+		}
+	#aquario
+		{
+			left: 3%;
+			top: 55%;
+			width: 40%;	
+			height: 30%;	
+			background-repeat: no-repeat;	
+			background-image: url("image/anci_v1.JPG");
+		}
+	#espece
+		{
+			left: 55%;	
+			width: 40%;
+			height:30%;
+			top: 55%;	
+			background-repeat: no-repeat;
+			background-image: url("image/img_espece.jpg");
+		}
+	#bloc_actualite, #bloc_especes
+		{
+			top: 90%;		
+		}
+		
+	nav
+		{
+			display: none;
+		}
+	#titre_oceano, #titre_pdm, #titre_aquario, #titre_espece
+		{
+			font-size: 12px;
+			text-align: center;		
+		}
+	h2
+		{
+			color: white;
+			font-size: 70%;		
+		}
+	h1
+		{
+			font-size: 150%;		
+		}
+	.presentation
+		{
+			display: none;		
+		}
+	#bloc_especes
+		{
+			display: none;		
+		}
+	#bloc_actualite
+		{
+			top: 101%;
+			width: 80%;
+			left: 5%;	
+			background-repeat: no-repeat;	
+			background-image: url("image/fondpaysage_v1.JPG");
+		}
+	.lien1
+		{
+			text-align: center;
+			margin-left: 18%;		
+		}
+	#month, #month_espece, #month_aquario, #month_pdm
+		{
+			height: 20%;	
+			background-position: bottom center;	
+		}
+	.banniere_actualite
+		{
+			height: 15%;		
+		}
+	/*#img_boat
+		{
+			opacity: 0.8;
+			margin: auto;		
+		}*/
+}			
+
+
